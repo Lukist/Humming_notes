@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationFragment">
+
+
+        <TextView
+            android:id="@+id/nombreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuil/Cuit"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            />
+
+        <EditText
+            android:id="@+id/cuilInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombreTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="xx-xxxxxx-x"
+            android:textSize="25dp"
+            android:background="@drawable/text_field"
+            android:padding="7dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/edadTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="25dp"
+            android:layout_below="@id/cuilInput"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            />
+
+        <EditText
+            android:id="@+id/nombreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edadTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="Miguel Perez"
+            android:textSize="25dp"
+            android:background="@drawable/text_field"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/fechaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha De Nacimiento"
+            android:textSize="25dp"
+            android:layout_below="@id/nombreInput"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            />
+
+        <EditText
+            android:id="@+id/fechaInput"
+            android:inputType="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fechaTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="dd/mm/aaaa"
+            android:textSize="25dp"
+            android:background="@drawable/text_field"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/sexTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:textSize="25dp"
+            android:layout_below="@id/fechaInput"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sexTitle"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:text="Hombre" />
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Mujer" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/mailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail"
+            android:textSize="25dp"
+            android:layout_below="@id/radioSex"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            />
+
+        <EditText
+            android:id="@+id/mailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mailTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:hint="MiguelPerez@gmail.com"
+            android:textSize="25dp"
+            android:background="@drawable/text_field"
+            android:padding="7dp"
+            />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Registrar"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingHorizontal="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/mailInput"
+            />
+
+
+</RelativeLayout>

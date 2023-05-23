@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HubFragment"
+    >
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="356dp"
+        android:layout_height="288dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/birdtransparent"
+
+        />
+
+    <TextView
+        android:id="@+id/logoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humming Notation"
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"/>
+    <TextView
+        android:id="@+id/logoSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoTitle"
+        android:text="Seleccionar actividad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoSubTitle"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/registrationRedirectionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR CLIENTE"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:padding="15dp"
+            />
+
+        <Button
+            android:id="@+id/listRedirectionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER CLIENTES"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/registrationRedirectionBtn"
+            android:padding="15dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
