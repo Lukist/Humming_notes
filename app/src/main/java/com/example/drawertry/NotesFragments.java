@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,11 +56,22 @@ public class NotesFragments extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    ListAdapter mAdapter;
+    ListView lvNotas;
+    DatabaseHelper db;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notes_fragments, container, false);
+        View root = inflater.inflate(R.layout.fragment_notes_fragments, container, false);
+
+        lvNotas = root.findViewById(R.id.lv_notes);
+
+        db = new DatabaseHelper(getContext());
+
+        mAdapter = new NotaListaAdapter(getContext(), R.layout.notes_row, db.getAllNotas());
+
+        lvNotas.setAdapter(mAdapter);
+        return root;
     }
 }

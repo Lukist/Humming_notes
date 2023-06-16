@@ -6,13 +6,11 @@
     tools:context=".NotesFragments">
 
 
-    <TextView
+    <ListView
+        android:id="@+id/lv_notes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Notes"
-        android:layout_centerInParent="true"
-        android:textAlignment="center"
-        android:textSize="35dp"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:isScrollContainer="false"/>
 
 </RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNote">
+
+    <TextView
+        android:id="@+id/asuntoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asunto"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        />
+
+    <EditText
+        android:id="@+id/asuntoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asuntoTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:hint="tema"
+        android:textSize="25dp"
+        android:background="@drawable/text_field"
+        android:padding="7dp"
+        />
+
+    <TextView
+        android:id="@+id/notaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota"
+        android:textSize="25dp"
+        android:layout_below="@id/asuntoInput"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        />
+
+    <EditText
+        android:id="@+id/notaInput"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/notaTitle"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:hint="¿Cual es el problema?"
+        android:textSize="25dp"
+        android:background="@drawable/text_field"
+        android:padding="7dp"
+        />
+
+    <Button
+        android:id="@+id/addNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notaInput"
+        android:text="Agragar Nota"
+        android:textSize="23dp"
+        android:letterSpacing="0.15"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

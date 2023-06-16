@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomerShowInfo">
+    tools:context=".CustomerShowInfo"
+    >
 
     <RelativeLayout
         android:id="@+id/statusBar"
@@ -117,6 +118,15 @@
         android:layout_below="@+id/mailStatusTitle"
         android:textSize="30dp"
         android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/agragarNotaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nota"
+        android:textSize="25dp"
+        android:layout_below="@id/mailStatus"
+        android:layout_centerHorizontal="true"/>
 
 
 
